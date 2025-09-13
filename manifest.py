@@ -1,0 +1,23 @@
+{
+    'name': 'Matrix Chat Integration',
+    'version': '18.0.1.0.0',
+    'category': 'Productivity',
+    'summary': 'Odoo ↔ Matrix chat integration for case notifications',
+    'description': 'Posts Odoo case updates to Matrix rooms and mirrors replies.',
+    'author': 'Your Name, OCA',
+    'depends': ['base', 'mail'],
+    'data': [
+        'security/matrix_security.xml',
+        'security/ir.model.access.csv',
+        'views/matrix_backend_views.xml',
+        'views/legal_case_views.xml',
+        'views/matrix_log_views.xml',
+        'views/matrix_contact_views.xml',
+        'views/matrix_menus.xml',
+        'data/matrix_demo_data.xml',
+    ],
+    'demo': ['data/matrix_demo_data.xml'],
+    'installable': True,
+    'application': True,
+    'license': 'AGPL-3',
+}
